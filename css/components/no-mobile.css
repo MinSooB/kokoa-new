@@ -7,8 +7,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 40px;
+  font-weight: 600;
   top: 0;
+}
+
+#no-mobile span {
+  margin-right: 20px;
+}
+
+@keyframes applespin {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#no-mobile i {
+  animation: applespin 1s linear infinite;
 }
 
 @media screen and (max-width: 645px) {

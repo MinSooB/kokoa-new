@@ -49,6 +49,18 @@
   margin-bottom: 25px;
 }
 
+@keyframes timestamp-emphasis {
+  to {
+    background-color: #43a1e9;
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.chat__timestamp:hover {
+  animation: timestamp-emphasis 1s ease-in-out forwards;
+}
+
 .message-row {
   width: 100%;
   display: flex;
